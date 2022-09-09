@@ -1,0 +1,277 @@
+/* IMPOSTAZIONI GENERALI */
+* *::before *::after {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  height: 100%;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.8;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-size: 3.5rem;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 1;
+  background-color: white;
+  box-shadow: -2px 8px 7px 0px #d5d1d1;
+  height: 30vw;
+  margin-bottom: 3px;
+}
+
+.img-logo {
+  width: 25vw;
+}
+
+.tendina {
+  display: none;
+  position: absolute;
+  padding-top: 8px;
+}
+
+.tendina a {
+  color: #e42424;
+  text-decoration: none;
+}
+
+.fa-solid,
+.fa-bars {
+  font-size: large;
+}
+
+.down {
+  cursor: pointer;
+}
+.menu i {
+  color: #e42424;
+  font-size: 6vw;
+}
+
+.menu:hover .tendina {
+  display: block;
+}
+
+.tendina a:hover {
+  background-color: #f1f1f1;
+}
+
+ul {
+  list-style-type: none;
+}
+/* MAIN */
+
+.call-to-action {
+  background-image: url(../images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 2%;
+  min-height: 430px;
+}
+
+.call-to-action span {
+  text-transform: uppercase;
+}
+
+.call-to-action h1 {
+  font-size: 60px;
+  line-height: 1.5;
+}
+
+.call-to-action p {
+  margin-top: 5vw;
+}
+/* BUTTON */
+.button-info {
+  color: white;
+  font-size: 1.9rem;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  background: rgb(108, 193, 226);
+  background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 8px 2px black;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.button-span :hover {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.52), -10px -10px 5px rgba(0, 0, 0, 0.52), 10px -10px 5px rgba(0, 0, 0, 0.52), -10px 10px 5px rgba(0, 0, 0, 0.52);
+  opacity: 1;
+  transition: 2s;
+  animation: Animation1 4s;
+}
+
+@keyframes Animation1 {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.9);
+  }
+
+  50% {
+    box-shadow: 0 0 0 17px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+/* SECTIONS */
+
+.section1 {
+  text-align: center;
+}
+
+.section1 div {
+  padding-top: 60px;
+  padding-left: 18px;
+  padding-right: 18px;
+  line-height: 1.5;
+}
+
+.section1 i {
+  color: #e42424;
+  font-size: 60px;
+}
+.section1-chisiamo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5%;
+  margin-bottom: 3%;
+}
+.section1-chisiamo div {
+  margin-bottom: 3%;
+}
+
+.img-section1-chisiamo {
+  width: 79vw;
+}
+.box-scrivici {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  padding: 18px;
+  text-align: center;
+  line-height: 1.5;
+  height: 100vw;
+  color: white;
+  background-color: #0c0633;
+}
+
+.button-scrivici {
+  color: white;
+  font-size: 1.9rem;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  background: rgb(108, 193, 226);
+  background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 8px 2px black;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.button-scrivici a {
+  color: white;
+  text-decoration: none;
+}
+
+/* SECTION2*/
+.section2 {
+  text-align: center;
+}
+
+.img-section2 {
+  width: 80vw;
+}
+.section2 h5 {
+  font-size: 3.5rem;
+}
+
+.section2 div {
+  margin-top: 1.5vw;
+  margin-bottom: 2.5vw;
+}
+
+.section2 i {
+  color: #e42424;
+  font-size: 60px;
+}
+/* FOOTER */
+
+footer {
+  padding: 30px;
+  background-color: rgb(238, 238, 238);
+}
+
+footer h5 {
+  font-size: 2.2rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer i {
+  color: #e42424;
+  font-size: 60px;
+}
+
+.footer div {
+  margin-bottom: 3vw;
+}
+footer fieldset {
+  text-align: center;
+}
+
+footer button {
+  color: white;
+  font-size: 1.9rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  background: rgb(108, 193, 226);
+  background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 8px 2px black;
+  padding: 16px;
+  cursor: pointer;
+  width: 50vw;
+}
+
+footer input {
+  font-size: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50vw;
+}
+
+.address {
+  margin-top: 3vw;
+}
+/* RESPONSIVE */
