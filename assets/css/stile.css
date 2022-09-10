@@ -21,7 +21,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 /* HEADER */
@@ -74,6 +74,10 @@ header {
 
 ul {
   list-style-type: none;
+}
+
+ul li {
+  font-size: 16px;
 }
 /* MAIN */
 
@@ -214,9 +218,9 @@ ul {
   font-size: 2rem;
 }
 
-#tabella-mobile div p: {
+/* #tabella-mobile div p: {
   font-size: 16px;
-}
+} */
 
 .colonna1-div1 {
   grid-column: 1/2;
@@ -273,15 +277,66 @@ ul {
   color: #e42424;
   font-size: 60px;
 }
-/* FOOTER */
+
+/* PAGINA CONTATTI */
+
+.sezione2-contatti {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4%;
+  margin-bottom: 4%;
+}
+
+.sezione2-contatti p {
+  text-align: center;
+}
+
+.sezione2-contatti h3 {
+  font-size: 2rem;
+}
+.sezione1-contatti {
+  text-align: center;
+}
+
+.sezione1-contatti button {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  background: rgb(108, 193, 226);
+  background: linear-gradient(90deg, rgba(108, 193, 226, 1) 0%, rgba(57, 47, 122, 1) 100%);
+  color: white;
+  border: none;
+  box-shadow: 1px 1px 6px 1px black;
+  padding: 12px;
+  cursor: pointer;
+  width: auto;
+}
+
+.sezione1-contatti form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.sezione1-contatti form input,
+.sezione1-contatti form textarea {
+  width: 90%;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
 
 footer {
   padding: 30px;
   background-color: rgb(238, 238, 238);
+  font-size: 1.5rem;
 }
 
 footer h5 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .footer {
