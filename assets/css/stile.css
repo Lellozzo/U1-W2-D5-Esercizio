@@ -24,6 +24,10 @@ h5 {
   font-size: 3rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* HEADER */
 header {
   display: flex;
@@ -59,6 +63,33 @@ header {
 .down {
   cursor: pointer;
 }
+
+@media screen and (min-width: 800px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #nav ul {
+    display: flex;
+    width: 40%;
+    text-decoration: none;
+  }
+}
+
+#nav ul li {
+  font-size: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
 .menu i {
   color: #e42424;
   font-size: 6vw;
@@ -156,6 +187,7 @@ ul li {
   color: #e42424;
   font-size: 60px;
 }
+
 .section1-chisiamo {
   display: flex;
   flex-direction: column;
@@ -167,8 +199,25 @@ ul li {
   margin-bottom: 3%;
 }
 
+.section1-chisiamo p {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  #box-img-chisiamo {
+    display: flex;
+  }
+  .img-section1-chisiamo {
+    width: 70%;
+    height: 20vw;
+  }
+  #box-img1-section1-chisiamo {
+    margin-right: 2vw;
+  }
+}
+
 .img-section1-chisiamo {
-  width: 79vw;
+  width: 70%;
 }
 .box-scrivici {
   display: flex;
@@ -207,6 +256,40 @@ ul li {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 4vw;
+}
+
+@media screen and (min-width: 800px) {
+  #tabella-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #tabella-desk {
+    display: none;
+  }
+}
+
+#tabella-desk {
+  width: 60vw;
+  text-align: center;
+  margin: auto;
+  border-collapse: collapse;
+  margin-bottom: 4%;
+}
+tr:nth-child(odd) {
+  background-color: #d2dce7;
+}
+
+tr:first-child {
+  font-weight: bold;
+  color: white;
+  background-color: #1d3d5e;
+}
+
+th,
+td {
+  padding: 15px;
 }
 
 .titolotab {
@@ -329,6 +412,25 @@ ul li {
   margin-bottom: 10px;
 }
 
+.titolo-contatti {
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  #sezione-contatti-desk {
+    display: flex;
+    align-items: center;
+  }
+  .sezione1-contatti {
+    width: 40vw;
+  }
+  .sezione2-contatti {
+    padding-top: 0;
+  }
+  header h3:first-child {
+    text-align: center;
+  }
+}
 footer {
   padding: 30px;
   background-color: rgb(238, 238, 238);
@@ -381,5 +483,45 @@ footer input {
 
 .address {
   margin-top: 3vw;
+  text-align: center;
 }
-/* RESPONSIVE */
+
+@media screen and (min-width: 800px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer fieldset,
+  .footer input,
+  .footer button {
+    width: 25vw;
+  }
+
+  .footer h5 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #section1-desk {
+    display: flex;
+    font-size: 18px;
+  }
+  .box-scrivici {
+    justify-content: center;
+    height: 30vw;
+  }
+
+  #section2-desk {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-section2 {
+    width: 25vw;
+  }
+
+  #section2-desk h5 {
+    font-size: 2rem;
+  }
+}
